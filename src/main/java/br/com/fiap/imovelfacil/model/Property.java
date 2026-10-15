@@ -13,12 +13,15 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.hateoas.server.core.Relation;
 
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+// Sem isso a coleção sairia como _embedded.propertyList; o contrato pede _embedded.properties
+@Relation(collectionRelation = "properties")
 public class Property {
 
     @Id

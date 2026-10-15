@@ -34,6 +34,33 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
+        <!-- Diamante 03: links navegáveis (EntityModel, PagedModel) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-hateoas</artifactId>
+        </dependency>
+
+        <!-- Diamante 03: @EnableCaching, @Cacheable, @CachePut, @CacheEvict -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+        <!-- Diamante 03: /actuator/health, /actuator/info e /actuator/caches -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Diamante 03: Swagger UI em /swagger-ui.html.
+             A 3.1.1 e a linha do springdoc feita para o Spring Boot 4.1;
+             as versoes 2.x sao para o Boot 3 e nao funcionam aqui. -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>3.1.1</version>
+        </dependency>
+
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
